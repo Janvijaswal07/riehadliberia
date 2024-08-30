@@ -1,7 +1,15 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home } from './pages/Home';
+import Staff from './pages/Staff'
+import AboutUS from './pages/AboutUS';
+import Contact from './pages/Contact';
+import Donate from './pages/Donate';
+import Home from './pages/Home';
+import News from './pages/News';
+import Sponsor from './pages/Sponsor';
+
 
 function App() {
   return (
@@ -9,13 +17,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/staff" element={<div>Staff Page</div>} />
-        <Route path="/about" element={<div>About Page</div>} />
-        <Route path="/contact" element={<div>Contact Page</div>} />
-        <Route path="/donate" element={<div>Donate Page</div>} />
-        <Route path="/sponsor" element={<div>sponsor Page</div>} />
-        <Route path="/news" element={<div>News Page</div>} />
+        <Route path="/staff" element={<Staff/>} />
+        <Route path="/about" element={<AboutUS/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/donate" element={<Donate/>} />
+        <Route path="/sponsor" element={<Sponsor/>} />
+        <Route path="/news" element={<News/>} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

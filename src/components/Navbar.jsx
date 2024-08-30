@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 //import { IoCartOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import logo from '../assets/logo/logo.png'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +16,10 @@ function Navbar() {
   };
 
   return (
-    <header className="w-full h-24  grid grid-cols-[10rem,1fr,2fr,1fr,10rem] lg:border-b  items-center sticky top-0 bg-white opacity-90 z-50	">
+    <header className="w-full h-full  grid grid-cols-[10rem,1fr,2fr,1fr,10rem] lg:border-b  items-center sticky top-0 bg-white opacity-90 z-50	">
       <div className="lg:col-start-2 lg:col-end-3 lg:grid lg:content-center lg:text-2xl grid content-center text-2xl justify-items-center ">
       <NavLink to="/">
-         <h2>logo</h2>
+      <img className="w-14 py-2" src={logo} alt="" />
         </NavLink>
         
       </div>
@@ -88,14 +88,14 @@ function Navbar() {
             
            
             <NavLink
-              to="/"
+              to="/sponsor"
               className="block px-8 py-2 m-5 tracking-tighter hover:text-zinc-400 "
               onClick={closeDropdown}
             >
               Sponsor a child
             </NavLink>
             <NavLink
-              to="/"
+              to="/donate"
               className="block px-8 py-2 m-5  hover:text-zinc-400"
               onClick={closeDropdown}
             >
@@ -107,6 +107,13 @@ function Navbar() {
               onClick={closeDropdown}
             >
               News
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="block px-8 py-2 m-5 rounded-lg bg-green-300  hover:bg-green-400"
+              onClick={closeDropdown}
+            >
+              Contact 
             </NavLink>
            
           </div>
