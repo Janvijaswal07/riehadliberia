@@ -1,3 +1,4 @@
+
 import React from "react";
 import bg from "../assets/homeimg/whole-group-orig_orig.jpg";
 import { NavLink } from "react-router-dom";
@@ -22,14 +23,14 @@ export const Home = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 bg-[#0f2316] bg-opacity-70">
-          <h1 className="text-white font-black text-4xl md:text-6xl lg:text-8xl tracking-wider mb-4">
+          <h1 className="text-white animate-bounce font-black text-5xl md:text-6xl lg:text-8xl tracking-wider ">
             Next Generation
           </h1>
-          <p className="text-white font-bold text-sm md:text-lg mb-8">
+          <p className="text-white tracking-wider font-normal md:font-bold  text-lg md:text-lg mb-8">
             Our future. Our Generation
           </p>
           <NavLink to="/donate">
-            <button className="border-none px-8 md:px-12 py-2 md:py-3 text-sm md:text-lg rounded-full font-medium bg-green-400 hover:bg-green-500 shadow-lg text-white tracking-wider">
+            <button className="border-none animate-pulse px-9 md:px-12 py-3 md:py-3 text-md md:text-lg rounded-full font-medium bg-green-400 hover:bg-green-500 shadow-lg text-white tracking-wider">
               Donate Now
             </button>
           </NavLink>
@@ -37,7 +38,7 @@ export const Home = () => {
       </section>
 
       {/* Mission Section */}
-      <main className="p-4 md:p-8 lg:p-16">
+      <main className="p-4 md:p-8 lg:p-32">
         <section className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide text-[#006D28]">
             Our Mission
@@ -51,7 +52,7 @@ export const Home = () => {
         {/* Flex Container for Paragraph and Image */}
         <section className="flex flex-col md:flex-row items-center justify-center gap-8">
           {/* Paragraph */}
-          <div className="flex-1 md:pr-4 leading-7 mb-4 md:mb-0">
+          <div className="flex-1  md:pr-4 leading-8 tracking-wider mb-4 md:mb-0">
             <p>
               RIEHAD-Liberia's mission is to make positive changes in our
               communities by fighting societal ills of today in the areas of
@@ -108,8 +109,8 @@ export const Home = () => {
         <h1 className="text-2xl md:text-3xl  lg:text-4xl font-semibold text-[#006D28] mb-4">
         Education
       </h1>
-          <div className="flex flex-col md:flex-row  mb-7items-center gap-8">
-            <div className="flex-1 leading-7">
+          <div className="flex flex-col md:flex-row  mb-6 items-center gap-8">
+            <div className="flex-1 tracking-wider leading-8">
               <p>
                 Liberia grapples with some of the world's most alarming rates of
                 out-of-school children, with approximately 15 to 20% of 6- to
@@ -125,15 +126,9 @@ export const Home = () => {
                 progress placed Liberia at a concerning 153rd out of 163 nations
                 striving to achieve the SDG 4. This ranking underscores the
                 urgent need for intervention and improvement in educational
-                accessibility and quality within the country. Moreover, the
-                challenges faced by Liberian children extend beyond educational
-                barriers, encompassing issues such as child labor, abuse, early
-                marriages, female genital mutilation, and sexual violence. These
+                accessibility and quality within the country. These
                 multifaceted challenges compound the struggle for basic rights and
-                opportunities for many young Liberians. In response to these
-                pressing issues, RIEHAD-Liberia have taken action, particularly
-                in rural areas, to address the root causes and effects of
-                educational exclusion. Their efforts focus on facilitating the
+                opportunities for many young Liberians. Their efforts focus on facilitating the
                 return of out-of-school children to school, enhancing the
                 professional development of teachers, and raising awareness about
                 crucial issues like bullying, stigmatization, and discrimination
@@ -169,7 +164,7 @@ export const Home = () => {
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#006D28] mb-6">
         Agriculture
       </h1>
-      <p className="leading-7 mb-8">
+      <p className="tracking-wider leading-8 mb-8">
         Liberia's agricultural landscape faces significant challenges
         that require urgent attention. Despite its fertile land and
         potential for agricultural development, the country struggles
@@ -185,9 +180,7 @@ export const Home = () => {
         these challenges, RIEHAD-Liberia's efforts are focused on
         empowering rural farmers through education, training, and access
         to resources. By promoting sustainable agricultural practices,
-        enhancing food production, and facilitating access to markets,
-        RIEHAD-Liberia strives to improve the livelihoods of
-        smallholder farmers and contribute to the overall economic
+        contribute to the overall economic
         development of rural communities. Through these initiatives, the
         organization aims to reduce poverty, increase food security, and
         create a sustainable and resilient agricultural sector in Liberia.
@@ -204,7 +197,7 @@ export const Home = () => {
         Health
       </h1>
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-1 leading-7">
+            <div className="flex-1 tracking-wider leading-8">
               <p>
                 Liberia's healthcare system faces significant challenges,
                 including a shortage of healthcare professionals, inadequate
@@ -215,10 +208,7 @@ export const Home = () => {
                 a high burden of infectious diseases, maternal and child
                 mortality, and malnutrition. Additionally, the mental health of
                 Liberians is a growing concern, with limited resources and
-                awareness surrounding mental health issues. In response to these
-                challenges, RIEHAD-Liberia is dedicated to improving healthcare
-                access and quality through community health programs, awareness
-                campaigns, and support for healthcare facilities. The
+                awareness surrounding mental health issues. The
                 organization's initiatives aim to promote preventive healthcare,
                 raise awareness about health and hygiene, and advocate for the
                 well-being of vulnerable populations. By partnering with local
