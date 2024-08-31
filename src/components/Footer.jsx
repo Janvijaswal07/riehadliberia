@@ -4,7 +4,7 @@ import logo from '../assets/logo/logo.png'
 const Footer = () => {
   return (
     <footer className=' bg-gray-300 gap-5 flex justify-start items-center flex-col md:flex-row  text-lg p-10'>
-      <div className='items-center '>
+      <div className='items-center md:mx-20 '>
         <img className='md:w-40 w-auto' src={logo} alt="" />
       </div>
       <div className=''>
@@ -18,4 +18,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

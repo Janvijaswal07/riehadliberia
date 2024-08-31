@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoMdClose } from "react-icons/io"; // Import the close icon
+import { IoMdClose } from "react-icons/io"; 
 import logo from '../assets/logo/logo.png'
 
 function Navbar() {
