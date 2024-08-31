@@ -16,7 +16,7 @@ export const Home = () => {
   return (
     <div className="font-roboto-condensed">
       {/* Hero Section */}
-      <section className="relative w-full h-screen overflow-hidden">
+      <section className="relative w-full h-screen overflow-hidden mb-8">
         <img
           src={bg}
           alt="Background"
@@ -30,7 +30,7 @@ export const Home = () => {
             Our future. Our Generation
           </p>
           <NavLink to="/donate">
-            <button className="border-none animate-pulse px-9 md:px-12 py-3 md:py-3 text-md md:text-lg rounded-full font-medium bg-green-400 hover:bg-green-500 shadow-lg text-white tracking-wider">
+            <button className="border-none animate-pulse px-9 md:px-12 py-3 md:py-3 text-md  md:text-lg rounded-full font-medium bg-green-400 hover:bg-green-500 shadow-lg text-white tracking-wider">
               Donate Now
             </button>
           </NavLink>
@@ -38,7 +38,7 @@ export const Home = () => {
       </section>
 
       {/* Mission Section */}
-      <main className="p-4 md:p-8 lg:p-32">
+      <main className="px-4  md:px-8 lg:px-32">
         <section className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide text-[#006D28]">
             Our Mission
@@ -50,7 +50,7 @@ export const Home = () => {
         </section>
 
         {/* Flex Container for Paragraph and Image */}
-        <section className="flex flex-col md:flex-row items-center justify-center gap-8">
+        <section className="flex mb-8 flex-col md:flex-row items-center justify-center gap-8">
           {/* Paragraph */}
           <div className="flex-1  md:pr-4 leading-8 tracking-wider mb-4 md:mb-0">
             <p>
@@ -78,7 +78,7 @@ export const Home = () => {
         </section>
 
         {/* Key Pillars */}
-        <section className="mt-10 md:mt-16">
+        <section className="mb-8">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#006D28]">
             Motto:
           </h2>
@@ -105,7 +105,7 @@ export const Home = () => {
         </section>
 
         {/* Education Section */}
-        <section className="mt-20 md:mt-32">
+        <section className="mb-8">
         <h1 className="text-2xl md:text-3xl  lg:text-4xl font-semibold text-[#006D28] mb-4">
         Education
       </h1>
@@ -151,9 +151,9 @@ export const Home = () => {
         </section>
 
         {/* Agriculture Section */}
-        <section className=" md:mt-32">
-  <div className="flex flex-col md:flex-row items-start gap-8">
-  <div className="flex-1 mt-20 " >
+        <section className=" mb-8">
+  <div className="flex flex-col-reverse md:flex-row items-start gap-8">
+  <div className="flex-1 md:mt-24  " >
       <img
         className="w-full md:w-[550px]  lg:w-[600px] h-auto object-cover md:h-96 object-top rounded-md"
         src={homeagriculture}
@@ -164,7 +164,7 @@ export const Home = () => {
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#006D28] mb-6">
         Agriculture
       </h1>
-      <p className="tracking-wider leading-8 mb-8">
+      <p className="tracking-wider leading-8 ">
         Liberia's agricultural landscape faces significant challenges
         that require urgent attention. Despite its fertile land and
         potential for agricultural development, the country struggles
@@ -192,7 +192,7 @@ export const Home = () => {
 
 
         {/* Health Section */}
-        <section className="mt-20 md:mt-32">
+        <section className="mb-8">
            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#006D28] mb-6  ">
         Health
       </h1>

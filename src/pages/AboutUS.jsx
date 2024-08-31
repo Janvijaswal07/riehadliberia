@@ -1,4 +1,3 @@
-
 import React from "react";
 import bg from "../assets/about/bgimg.png";
 import img1 from "../assets/about/cimg1.png";
@@ -14,7 +13,7 @@ const AboutUS = () => {
   return (
     <div className="min-h-screen font-roboto-condensed">
       {/* Background image section */}
-      <section className="relative w-full h-screen overflow-hidden">
+      <section className="relative w-full mb-8 h-screen overflow-hidden">
         <img src={bg} alt="Background" className="w-full h-full object-cover" />
         <div className="absolute inset-0 flex items-center justify-start p-4 md:p-8 lg:p-14">
           <h1 className="text-white font-black text-4xl md:text-5xl lg:text-7xl ml-4 md:ml-10 lg:ml-28 tracking-widest">
@@ -24,10 +23,10 @@ const AboutUS = () => {
       </section>
 
       {/* Main content area */}
-      <main className="px-4 md:px-8 lg:px-14 mb-11">
+      <main className="px-4 md:px-8 lg:px-14">
         {/* Brief Historical Background Section */}
-        <section className="p-4 md:p-8 lg:px-14">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#006D28] mb-4">
+        <section className="px-4 md:px-8 lg:px-14">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#006D28] mb-6">
             Brief Historical Background
           </h1>
           <div className="flex flex-col md:flex-row items-center gap-8">
@@ -67,14 +66,14 @@ const AboutUS = () => {
         </section>
 
         {/* Purpose of the Organization Section */}
-        <section className="p-4 md:p-8 lg:px-16">
+        <section className="px-4 md:px-8 lg:px-16 mb-8">
           <div className="flex flex-col items-center">
             <img
               src={img2}
               alt="Purpose of the Organization"
               className="w-full md:w-2/3 lg:w-full h-auto mb-4"
             />
-            <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-semibold text-[#006D28]">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl text-center mb-6 font-semibold text-[#006D28]">
               Purpose of the Organization
             </h1>
             <p className="mt-6 px-4 md:px-9 leading-8 tracking-wider text-center">
@@ -109,7 +108,7 @@ const AboutUS = () => {
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="flex-1">
               <img
-                className="w-full lg:mb-10 mb-14 md:mb-10 h-auto object-cover rounded-md"
+                className="w-full lg:mb-10 md:mb-10 h-auto object-cover rounded-md"
                 src={img3}
                 alt="Mission"
               />
@@ -136,7 +135,7 @@ const AboutUS = () => {
         </section>
 
         {/* Vision Section */}
-        <section className="px-4 md:p-8   lg:px-14">
+        <section className="px-4 md:px-8   lg:px-14">
           <div className="flex flex-col md:flex-row borderitems-start gap-16">
             <div className="flex-1  lg:mt-8">
               <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-semibold text-[#006D28] mb-6">
